@@ -9,10 +9,10 @@ const path = require('path')
 const compiler = webpack(webpackConfig);
 
 app.use(webpackDevMiddleware(compiler));
-app.use(express.static(__dirname + '/www'));
+app.use(express.static(__dirname + '/src/app'));
 
 app.get('/*', function response(req, res) {
-  res.sendFile(path.join(__dirname, 'www/index.html'));
+  res.sendFile(path.join(__dirname, 'src/app/index.html'));
 });
 
 const server = app.listen(3000, function() {
