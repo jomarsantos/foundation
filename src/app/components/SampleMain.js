@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Sample extends React.Component {
+class SampleMain extends React.Component {
   constructor() {
     super();
     this.state = {};
@@ -8,8 +8,8 @@ class Sample extends React.Component {
 
   render() {
     return (
-      <h1>hello</h1>
+      <h1>SampleMain</h1>
     );
   }
 }
-export default Sample;
+export default SampleMain;
