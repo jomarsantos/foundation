@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Provider } from 'react-redux';
 
-import SampleMain from './components/SampleMain';
-import SampleSubRoute from './components/SampleSubRoute';
+import configureStore from './store/configureStore.js';
+import App from './pages/App';
+
+const store = configureStore();
 
 document.addEventListener('DOMContentLoaded', function() {
 	ReactDOM.render(
-	  <Router>
-	      <div>
-	        <Route exact path='/' component={SampleMain} />
-					<Route path='/sub' component={SampleSubRoute} />
-	      </div>
-	  </Router>,
+		<Provider store={store}>
+	    <Router>
+	      <Route path="/" component={App} />
+	    </Router>
+	  </Provider>,
 	  document.getElementById('root')
 	);
 });
