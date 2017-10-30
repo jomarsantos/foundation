@@ -9,8 +9,16 @@ const path = require('path')
 const compiler = webpack(webpackConfig);
 
 app.use(webpackDevMiddleware(compiler));
-app.use(express.static(__dirname + '/src/app'));
 
+// Server
+var testRouter = require('./routes/testRoute.js');
+var rootRouter = require('./routes/root.js');
+
+app.use('/api/test', testRouter);
+app.use('/api', rootRouter);
+
+// Client
+app.use(express.static(__dirname + '/src/app'));
 app.get('/*', function response(req, res) {
   res.sendFile(path.join(__dirname, 'src/app/index.html'));
 });
