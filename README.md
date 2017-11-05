@@ -3,13 +3,13 @@
 - `npm install`
 - If running locally, ensure mongodb is installed
 - Start mongo daemon
-    - Option 1: In terminal
-        - `mongod`
-		- Option 2: As a aemon
-		    - If initial run, `mkdir ~/log`
-        - `mongod --fork --logpath ~/log/mongodb.log`
+	- Option 1: In terminal
+		- `mongod`
+	- Option 2: As a daemon
+		- If initial run, `mkdir ~/log`
+		- `mongod --fork --logpath ~/log/mongodb.log`
 - Update server.js with relevant mongo url
 - `mongo`
 - Start:
-    - Development: `npm run dev`
-    - Production: `npm start`
+	- Development: `npm run dev`
+	- Production: `npm start`
