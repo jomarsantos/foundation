@@ -1,5 +1,5 @@
 {
-  "name": "simple-mern-starter",
+  "name": "foundation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jomarsantos/simple-mern-starter.git"
+    "url": "git+https://github.com/jomarsantos/foundation.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jomarsantos/simple-mern-starter/issues"
+    "url": "https://github.com/jomarsantos/foundation/issues"
   },
-  "homepage": "https://github.com/jomarsantos/simple-mern-starter#readme",
+  "homepage": "https://github.com/jomarsantos/foundation#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

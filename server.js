@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 
 // Database
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://127.0.0.1:27017/simple-mern-starter';
+var mongoDB = 'mongodb://127.0.0.1:27017/foundation';
 mongoose.connect(mongoDB, {
 	useMongoClient: true
 });
