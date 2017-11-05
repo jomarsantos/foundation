@@ -1,1 +1,4 @@
-# simple-mern-starter
+# foundation
+## Set Up
+- `npm install`
+- `npm start`
