@@ -1,4 +1,4 @@
-# foundation
+# foundation-react-express-mongodb
 Boiler plate for a React, Express.js and MongoDB stack
 ## Setup via Docker (Suggested)
 - Make sure you have Docker installed
