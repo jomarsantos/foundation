@@ -1,0 +1,4 @@
+{
+  "mongoURL": "mongodb://mongo/foundation",
+  "port": 3000
+}
