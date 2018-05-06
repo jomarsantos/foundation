@@ -16,7 +16,7 @@ Boiler plate for a React, Express.js and MongoDB stack
 		- Option 2: As a daemon
 			- If initial run, `mkdir ~/log`
 			- `mongod --fork --logpath ~/log/mongodb.log`
-- Update server.js with relevant mongo url
+- Update config.json with relevant mongo url
 - `mongo`
 - Start:
 	- Development: `npm run dev`
