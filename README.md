@@ -1,5 +1,11 @@
-## foundation
-# Set Up
+# foundation
+## Setup via Docker (Suggested)
+- Make sure you have Docker installed
+- Run `docker-compose up`
+- Use `docker ps` to check containers are up and running
+- Use `docker-compose down` to shut down containers
+
+## Setup Manually
 - `npm install`
 - If running with local database:
 	- Ensure mongodb is installed
